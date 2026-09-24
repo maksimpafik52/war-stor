@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>military store</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a href="#"><img src="img/Gemini_Generated_Image_vhm1e0vhm1e0vhm1.png" class="header-pictures"
+                    alt="voyenecip"></a>
+            <nav class="nav">
+                <ul class="header-list">
+                    <li class="header-item"><a href="#main" class="header-link">Main</a></li>
+                    <li class="header-item"><a href="#about_us" class="header-link">About Us</a></li>
+                    <li class="header-item"><a href="#trainers" class="header-link">Trainers</a></li>
+                    <li class="header-item"><a href="#questions" class="header-link">Questions</a></li>
+                </ul>
+
+            <ul class="header-list1">
+                <li class="header-item1"><a href="#" class="header-link2"><img src="img/Inst.png" alt="instagram"
+                            class="header-pictures1"></a>
+                </li>
+                <li class="header-item1"><a href="#" class="header-link2"><img src="img/Facebook (1).png" alt="facebook"
+                            class="header-pictures1"></a>
+                </li>
+                <li class="header-item1"><a href="#" class="header-link2"><img src="img/TikTok.png" alt="tiktok"
+                            class="header-pictures1"></a>
+                </li>
+                <li class="header-item1"><a href="#" class="header-link2"><img src="img/YouTube.png" alt="youtube"
+                            class="header-pictures1"></a>
+                </li>
+            </ul>
+            </nav>
+
+            <button class="burger-btn" id="burger-btn" aria-label="Відкрити меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+
+        </div>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section class="about" id="main">
+
+            <div class="container about-container">
+
+                <div class="about-box">
+
+                    <p class="about-text">Надійність, що гартувалася в бою</p>
+
+                    <h1 class="about-title"><span class="about-span">Будь готовим</span> до всього з міцним тактичним
+                        спорядженням</h1>
+
+                    <p class="about-text">Професійне екіпірування та якісна амуніція для тих, хто не знає компромісів.
+                        Захист, на
+                        який можна покластися у будь-якій ситуації.</p>
+
+                    <button class="about-btn" data-modal-open>В кошик</button>
+
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button type="button" class="modal-close-btn" aria-label="Закрити модальне вікно"
+                                data-modal-close>
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L13 13M1 13L13 1" stroke="#000" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </button>
+
+                            <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
+
+                            <form class="callback-form">
+
+                                <div class="form-field">
+                                    <label for="user-name" class="form-label">Ім'я</label>
+                                    <div class="input-wrapper">
+                                        <input type="text" id="user-name" name="name" class="form-input" required>
+                                        <svg class="input-icon" width="18" height="18" viewBox="0 0 18 18"
+                                            fill="currentColor">
+                                            <path
+                                                d="M9 9c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="user-phone" class="form-label">Телефон</label>
+                                    <div class="input-wrapper">
+                                        <input type="tel" id="user-phone" name="phone" class="form-input" required>
+                                        <svg class="input-icon" width="18" height="18" viewBox="0 0 18 18"
+                                            fill="currentColor">
+                                            <path
+                                                d="M3.62 7.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V17c0 .55-.45 1-1 1C7.92 18 0 10.08 0 1c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="user-email" class="form-label">Пошта</label>
+                                    <div class="input-wrapper">
+                                        <input type="email" id="user-email" name="email" class="form-input" required>
+                                        <svg class="input-icon" width="18" height="18" viewBox="0 0 18 18"
+                                            fill="currentColor">
+                                            <path
+                                                d="M16 2H2c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V4l8 5 8-5v2z" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="form-field">
+                                    <label for="user-comment" class="form-label">Коментар</label>
+                                    <textarea id="user-comment" name="comment" class="form-textarea"
+                                        placeholder="Введіть текст"></textarea>
+                                </div>
+
+                                <div class="form-policy">
+                                    <label class="policy-label">
+                                        <input type="checkbox" name="policy" class="policy-checkbox" required>
+                                        <span class="custom-checkbox"></span>
+                                        <span class="policy-text">
+                                            Погоджуюся з розсилкою та приймаю <a href="#" class="policy-link">Умови
+                                                договору</a>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <button type="submit" class="submit-btn">Відправити</button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <img src="https://images.stockcake.com/public/4/9/f/49f1dd65-17cb-426a-92a1-d30dcc4550f8_large/tactical-gear-display-stockcake.jpg"
+                    class="about-pictures" alt="torg">
+
+            </div>
+
+        </section>
+
+        <section class="hero" id="about_us">
+
+            <div class="container hero-container">
+
+                <h2 class="hero-title"><span class="hero-span">Преміальне тактичне спорядження та амуніція для
+                        тих,</span> хто
+                    обирає безкомпромісну якість, максимальний захист та надійність у будь-яких умовах.</h2>
+
+            </div>
+
+        </section>
+
+        <section class="price">
+
+            <div class="container price-container">
+
+                <div class="price-topbox">
+
+                    <h3 class="price-title">Всі товари</h3>
+                    <div class="price-subbox">
+                        <button class="arrow-btn">&#10094;</button>
+                        <button class="arrow_btn">&#10095;</button>
+                    </div>
+
+                </div>
+
+                <div class="price-flex">
+
+                    <article class="price-article">
+
+                        <div class="box-overlay">
+
+                            <div class="box-modal">
+
+                                <div class="card">
+
+                                    <img src="https://real-def.com/files/resized/products/12.600x800.jpg"
+                                        class="price-pictures" alt="armor">
+
+                                    <div class="card-overlay">
+                                        <p class="overlay-text">Для військових знижка 40%</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="price-contantbox">
+
+                                    <h4 class="price-subtitle">Захисна броня</h4>
+                                    <p class="price-text">в комплекті броня для всіх частин тіла</p>
+                                    <span class="price-span">25,000 грн</span>
+
+                                    <button type="button" class="price-btn">В кошик</button>
+
+                                    <div class="backdrop is-hidden" id="order-modal">
+                                        <div class="modal">
+                                            <button type="button" class="modal-close-btn" id="modal-close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L13 13M1 13L13 1" stroke="#ffffff" stroke-width="2"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </button>
+
+                                            <h2 class="modal-title">Оформлення замовлення</h2>
+                                            <p class="modal-subtitle">Залиште свої дані і наш менеджер зв'яжеться з вами
+                                            </p>
+
+                                            <form class="modal-form">
+                                                <div class="form-field">
+                                                    <label for="user-name" class="form-label">Ім'я та Прізвище</label>
+                                                    <input type="text" id="user-name" name="name" class="form-input"
+                                                        placeholder="Тарас Шевченко" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-phone" class="form-label">Номер телефону</label>
+                                                    <input type="tel" id="user-phone" name="phone" class="form-input"
+                                                        placeholder="+380 (99) 000-00-00" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-city" class="form-label">Місто доставки (Нова
+                                                        Пошта)</label>
+                                                    <input type="text" id="user-city" name="city" class="form-input"
+                                                        placeholder="Київ, відділення №1">
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-comment" class="form-label">Коментар до
+                                                        замовлення</label>
+                                                    <textarea id="user-comment" name="comment" class="form-textarea"
+                                                        placeholder="Уточніть розмір або інші деталі..."></textarea>
+                                                </div>
+
+                                                <button type="submit" class="modal-submit-btn">Підтвердити
+                                                    замовлення</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="backdrop is-hidden" data-modal>
+                                        <div class="modal">
+
+                                            <button type="button" class="modal-close-btn" data-modal-close
+                                                aria-label="Закрити">
+                                                &times;
+                                            </button>
+
+                                            <h2 class="modal-title">Захисна броня</h2>
+                                            <p class="modal-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                                elit. Recusandae animi hic, iste optio voluptatibus, inventore
+                                                necessitatibus placeat nisi harum dolorum, blanditiis temporibus fugiat
+                                                velit sit aliquid officia aspernatur obcaecati porro?</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="price-article">
+
+                        <div class="box-overlay">
+
+                            <div class="box-modal">
+
+                                <div class="card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuC4Nk9QTTaDgfy006iRkUtnuZxyvXUM3lBw&s"
+                                        class="price-pictures" alt="rumor">
+
+                                    <div class="card-overlay">
+                                        <p class="overlay-text">Для військових знижка 40%</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="price-contantbox">
+
+                                    <h4 class="price-subtitle">Чуйка</h4>
+                                    <p class="price-text">Чуйка реагує на об'єкт на відстані 200 м.</p>
+                                    <span class="price-span">30,000 грн</span>
+                                    <button class="price-btn">В кошик</button>
+
+                                    <div class="backdrop is-hidden" id="order-modal">
+                                        <div class="modal">
+                                            <button type="button" class="modal-close-btn" id="modal-close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L13 13M1 13L13 1" stroke="#ffffff" stroke-width="2"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </button>
+
+                                            <h2 class="modal-title">Оформлення замовлення</h2>
+                                            <p class="modal-subtitle">Залиште свої дані і наш менеджер зв'яжеться з вами
+                                            </p>
+
+                                            <form class="modal-form">
+                                                <div class="form-field">
+                                                    <label for="user-name" class="form-label">Ім'я та Прізвище</label>
+                                                    <input type="text" id="user-name" name="name" class="form-input"
+                                                        placeholder="Тарас Шевченко" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-phone" class="form-label">Номер телефону</label>
+                                                    <input type="tel" id="user-phone" name="phone" class="form-input"
+                                                        placeholder="+380 (99) 000-00-00" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-city" class="form-label">Місто доставки (Нова
+                                                        Пошта)</label>
+                                                    <input type="text" id="user-city" name="city" class="form-input"
+                                                        placeholder="Київ, відділення №1">
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-comment" class="form-label">Коментар до
+                                                        замовлення</label>
+                                                    <textarea id="user-comment" name="comment" class="form-textarea"
+                                                        placeholder="Уточніть розмір або інші деталі..."></textarea>
+                                                </div>
+
+                                                <button type="submit" class="modal-submit-btn">Підтвердити
+                                                    замовлення</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="price-article">
+
+                        <div class="box-overlay">
+
+                            <div class="box-modal">
+
+                                <div class="card">
+
+                                    <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRhMiRskG1-CXkKo9jp2_VaLiozV-NR_JhiWsyzcCC1uYQcdZJf"
+                                        class="price-pictures" alt="first-aid-kit">
+
+                                    <div class="card-overlay">
+                                        <p class="overlay-text">Для військових знижка 40%</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="price-contantbox">
+
+                                    <h4 class="price-subtitle">Аптечка</h4>
+                                    <p class="price-text">В комплекті є все необхідне для виживання</p>
+                                    <span class="price-span">3,000 грн</span>
+                                    <button class="price-btn">В кошик</button>
+
+                                    <div class="backdrop is-hidden" id="order-modal">
+                                        <div class="modal">
+                                            <button type="button" class="modal-close-btn" id="modal-close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L13 13M1 13L13 1" stroke="#ffffff" stroke-width="2"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </button>
+
+                                            <h2 class="modal-title">Оформлення замовлення</h2>
+                                            <p class="modal-subtitle">Залиште свої дані і наш менеджер зв'яжеться з вами
+                                            </p>
+
+                                            <form class="modal-form">
+                                                <div class="form-field">
+                                                    <label for="user-name" class="form-label">Ім'я та Прізвище</label>
+                                                    <input type="text" id="user-name" name="name" class="form-input"
+                                                        placeholder="Тарас Шевченко" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-phone" class="form-label">Номер телефону</label>
+                                                    <input type="tel" id="user-phone" name="phone" class="form-input"
+                                                        placeholder="+380 (99) 000-00-00" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-city" class="form-label">Місто доставки (Нова
+                                                        Пошта)</label>
+                                                    <input type="text" id="user-city" name="city" class="form-input"
+                                                        placeholder="Київ, відділення №1">
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-comment" class="form-label">Коментар до
+                                                        замовлення</label>
+                                                    <textarea id="user-comment" name="comment" class="form-textarea"
+                                                        placeholder="Уточніть розмір або інші деталі..."></textarea>
+                                                </div>
+
+                                                <button type="submit" class="modal-submit-btn">Підтвердити
+                                                    замовлення</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article class="price-article">
+
+                        <div class="box-overlay">
+
+                            <div class="box-modal">
+
+                                <div class="card">
+
+                                    <img src="https://au.olicdn.com/image/image-giydwl.png" class="price-pictures"
+                                        alt="war-set">
+
+                                    <div class="card-overlay">
+                                        <p class="overlay-text">Для військових знижка 40%</p>
+                                    </div>
+
+                                </div>
+
+                                <div class="price-contantbox">
+
+                                    <h4 class="price-subtitle">Набір для військових</h4>
+                                    <p class="price-text">В комплекті є ліхтарики ніж та компас</p>
+                                    <span class="price-span">1,000 грн</span>
+                                    <button class="price-btn">В кошик</button>
+
+                                    <div class="backdrop is-hidden" id="order-modal">
+                                        <div class="modal">
+                                            <button type="button" class="modal-close-btn" id="modal-close">
+                                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L13 13M1 13L13 1" stroke="#ffffff" stroke-width="2"
+                                                        stroke-linecap="round" />
+                                                </svg>
+                                            </button>
+
+                                            <h2 class="modal-title">Оформлення замовлення</h2>
+                                            <p class="modal-subtitle">Залиште свої дані і наш менеджер зв'яжеться з вами
+                                            </p>
+
+                                            <form class="modal-form">
+                                                <div class="form-field">
+                                                    <label for="user-name" class="form-label">Ім'я та Прізвище</label>
+                                                    <input type="text" id="user-name" name="name" class="form-input"
+                                                        placeholder="Тарас Шевченко" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-phone" class="form-label">Номер телефону</label>
+                                                    <input type="tel" id="user-phone" name="phone" class="form-input"
+                                                        placeholder="+380 (99) 000-00-00" required>
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-city" class="form-label">Місто доставки (Нова
+                                                        Пошта)</label>
+                                                    <input type="text" id="user-city" name="city" class="form-input"
+                                                        placeholder="Київ, відділення №1">
+                                                </div>
+
+                                                <div class="form-field">
+                                                    <label for="user-comment" class="form-label">Коментар до
+                                                        замовлення</label>
+                                                    <textarea id="user-comment" name="comment" class="form-textarea"
+                                                        placeholder="Уточніть розмір або інші деталі..."></textarea>
+                                                </div>
+
+                                                <button type="submit" class="modal-submit-btn">Підтвердити
+                                                    замовлення</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="trainers" id="trainers">
+
+            <div class="container trainers-container">
+
+                <div class="trainers-flexcontainer">
+
+                    <h2 class="trainers-title">Simple way <span class="trainers-span">to order</span> your protection
+                    </h2>
+                    <p class="trainers-text">Деяке спорядження на ринку виглядає настільки ненадійно, ніби його зібрали
+                        в
+                        кустарній майстерні з підручних матеріалів. Але варто лише раз випробувати наш екіп у ділі, на
+                        полігоні
+                        чи в бою, як усі сумніви зникають миттєво — ти розумієш, що тримаєш у руках безкомпромісну
+                        якість, яка
+                        рятує життя.</p>
+
+                    <ol class="trainers-list">
+
+                        <li class="trainers-item">
+                            <p class="trainers-item-text">Обери потрібне тобі</p>
+                        </li>
+
+                        <li class="trainers-item">
+                            <p class="trainers-item-text">Додай свою карту</p>
+                        </li>
+
+                        <li class="trainers-item">
+                            <p class="trainers-item-text">Чекай на своє замовлення</p>
+                        </li>
+
+                    </ol>
+
+                    <div class="app">
+
+                        <img src="img/Download - Component (2).png" alt="app-store" class="trainers-pictures">
+                        <img src="img/Download - Component (3).png" alt="play-store" class="trainers-pictures">
+
+                    </div>
+
+                </div>
+
+                <img src="img/Gemini_Generated_Image_94lydf94lydf94ly.png" alt="trainer" class="trainers-pictures2">
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="questions" id="questions">
+
+            <div class="container questions-container">
+
+                <h2 class="questions-title"><span class="questions-span">Have Question</span> in Mind? Let us help you
+                </h2>
+
+                <form class="questions-form">
+
+                    <input type="text" class="questions-input" name="questions" placeholder="Поставте своє запитання..."
+                        required>
+                    <button class="questions-btn" type="send">Send</button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <ul class="footer-list">
+
+                <li class="footer-item">
+
+                    <ul class="footer-list2">
+
+                        <li class="footer-item2"><a href="#"><img src="img/Gemini_Generated_Image_vhm1e0vhm1e0vhm1.png"
+                                    class="footer-list2-pictures" alt="voyenecip"></a></li>
+
+                        <li class="footer-item2">
+                            <p class="footer-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
+                                velit? Delectus recusandae ipsam, praesentium commodi similique enim?</p>
+                        </li>
+
+                        <div class="network-container">
+
+                            <li class="footer-item2"><a href="#"><img class="footer-link1" src="img/Inst.png"
+                                        alt="Inst"></a></li>
+                            <li class="footer-item2"><a href="#"><img class="footer-link1" src="img/Facebook (1).png"
+                                        alt="facebook"></a></li>
+                            <li class="footer-item2"><a href="#"><img class="footer-link1" src="img/TikTok.png"
+                                        alt="tiktok"></a></li>
+                            <li class="footer-item2"><a href="#"><img class="footer-link1" src="img/YouTube.png"
+                                        alt="youtube"></a></li>
+
+                        </div>
+
+                    </ul>
+                </li>
+
+                <li class="footer-item">
+
+                    <ul class="footer-list3">
+
+                        <li class="footer_item3"><span class="footer-list3-span">MENU</span></li>
+                        <li class="footer-item3"><a href="#main" class="footer-link3">Main</a></li>
+                        <li class="footer-item3"><a href="#about_us" class="footer-link3">About Us</a></li>
+                        <li class="footer-item3"><a href="#trainers" class="footer-link3">Trainers</a></li>
+                        <li class="footer-item3"><a href="#questions" class="footer-link3">Questions</a></li>
+
+                    </ul>
+
+                </li>
+
+                <li class="footer-item">
+
+                    <ul class="footer-list4">
+
+                        <li class="footer_item4"><span class="footer-list4-span">CONTACTS</span></li>
+                        <li class="footer-item4">
+                            <a href="tel:+388 31 466 3000" class="footer-list4-link">831.466.3000</a>
+                        </li>
+                        <li class="footer-item4">
+                            <a href="mailto:info@basketball.com" class="footer-list4-link">info@basketball.com</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="footer-item">
+
+                    <ul class="footer-list5">
+
+                        <li class="footer_item5"><span class="footer-list5-span">LOCATION</span></li>
+                        <li class="footer-item5">
+                            <address class="footer-list5-address">1347 Pacific Avenue, Suite 201 Santa Cruz, CA, 95060
+                            </address>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
